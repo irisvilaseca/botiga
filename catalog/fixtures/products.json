@@ -1,0 +1,50 @@
+[
+    {
+        "model": "catalog.product",
+        "pk": 1,
+        "fields": {
+            "name": "Portàtil Dell XPS",
+            "description": "Portàtil potent per a desenvolupadors",
+            "price": "1200.00",
+            "stock": 5,
+            "category": "Electrònica",
+            "image": ""
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 2,
+        "fields": {
+            "name": "Auriculars Sony WH-1000XM4",
+            "description": "Auriculars amb cancel·lació de soroll",
+            "price": "350.00",
+            "stock": 15,
+            "category": "Electrònica",
+            "image": ""
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 3,
+        "fields": {
+            "name": "Teclat HP",
+            "description": "Teclat amb configuració ES",
+            "price": "50.00",
+            "stock": 20,
+            "category": "Electrònica",
+            "image": ""
+        }
+    },
+    {
+        "model": "catalog.product",
+        "pk": 4,
+        "fields": {
+            "name": "Mouse Apple",
+            "description": "Mouse d'alta precisió",
+            "price": "30.00",
+            "stock": 12,
+            "category": "Electrònica",
+            "image": ""
+        }
+    }
+]
