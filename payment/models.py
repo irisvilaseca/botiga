@@ -4,7 +4,7 @@ from django.db import models
 from django.db import models
 from django.contrib.auth.models import User
 from django.contrib.auth.models import User
-from catalog.models import Order
+
 
 class Payment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # Associació amb l'usuari
