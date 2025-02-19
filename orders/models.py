@@ -4,10 +4,10 @@ from django.db import models
 from django.db import models
 from django.contrib.auth.models import User
 
-from catalog.models import Product
-
+from botiga.catalog.models import Product
 
 # Create your models here.
+
 
 class Order(models.Model):
     id = models.IntegerField(max_length=10)
