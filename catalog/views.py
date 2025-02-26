@@ -38,3 +38,4 @@ def product_delete(request, pk):
         product.delete()
         return redirect('product_list')
     return render(request, 'product_confirm_delete.html', {'product': product})
+
