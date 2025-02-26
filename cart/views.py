@@ -11,13 +11,11 @@ class CartViewSet(viewsets.ViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_cart(self, user):
-        """Retrieve or create a cart for the user"""
         cart, created = Cart.objects.get_or_create(user=user)
         return cart
 
     @action(detail=False, methods=['get'])
     def view_cart(self, request):
-        """View cart contents"""
         cart = self.get_cart(request.user)
         items = cart.items.all()
         serializer = CartItemSerializer(items, many=True)
@@ -25,7 +23,6 @@ class CartViewSet(viewsets.ViewSet):
 
     @action(detail=False, methods=['post'])
     def add_to_cart(self, request):
-        """Add a product to the cart or update quantity"""
         serializer = AddToCartSerializer(data=request.data)
         if serializer.is_valid():
             cart = self.get_cart(request.user)
